@@ -26,6 +26,7 @@ class Sold(BaseModel):
 
 class Area(BaseModel):
     name = CharField()
+    priceIndex = IntegerField(null = True)
 
     class Meta:
         order_by = ('name',)

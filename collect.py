@@ -37,7 +37,7 @@ def query(limit = 35, offset = 0):
 
 # query Booli
 limit = 35
-offset = 19460
+offset = 0
 result = query(limit, offset)
 totalCount = result['totalCount']
 
