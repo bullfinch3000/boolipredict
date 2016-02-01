@@ -48,4 +48,26 @@ print "The scores are computed on the full evaluation set."
 print ""
 y_true, y_pred = y_test, clf.predict(X_test)
 print np.sqrt(mean_squared_error(y_true, y_pred))
-print ""    
+print ""
+
+# # OUTPUT
+# 'epsilon': 200000, 'C': 100000000, 'gamma': 0.01, 'kernel': 'rbf'}
+# 
+# Grid scores on development set:
+# 
+# -317368125169.946 (+/-91220983747.405) for {'epsilon': 200000, 'C': 50000000, 'gamma': 0.05, 'kernel': 'rbf'}
+# -306908991545.993 (+/-75646448153.698) for {'epsilon': 200000, 'C': 50000000, 'gamma': 0.01, 'kernel': 'rbf'}
+# -520607693456.971 (+/-492421073665.585) for {'epsilon': 200000, 'C': 50000000, 'gamma': 0.001, 'kernel': 'rbf'}
+# -335164803062.175 (+/-93701928442.803) for {'epsilon': 200000, 'C': 100000000, 'gamma': 0.05, 'kernel': 'rbf'}
+# -306238001742.424 (+/-72957218413.156) for {'epsilon': 200000, 'C': 100000000, 'gamma': 0.01, 'kernel': 'rbf'}
+# -529903667494.956 (+/-661849532490.275) for {'epsilon': 200000, 'C': 100000000, 'gamma': 0.001, 'kernel': 'rbf'}
+# -1799574216085.425 (+/-4645147911386.047) for {'epsilon': 200000, 'C': 500000000, 'gamma': 0.05, 'kernel': 'rbf'}
+# -374821778727.901 (+/-135131071705.617) for {'epsilon': 200000, 'C': 500000000, 'gamma': 0.01, 'kernel': 'rbf'}
+# -556727514847.116 (+/-927594603660.704) for {'epsilon': 200000, 'C': 500000000, 'gamma': 0.001, 'kernel': 'rbf'}
+# 
+# Root mean squared error report:
+# 
+# The model is trained on the full development set.
+# The scores are computed on the full evaluation set.
+# 
+# 588505.189471
