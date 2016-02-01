@@ -30,3 +30,9 @@ def readCsv():
 
 def getScaler():
     return joblib.load('scaler.pkl')
+
+def writeSVM(clf):
+    joblib.dump(clf, 'svm.pkl', compress=3)
+
+def getSVM():
+    return joblib.load('svm.pkl')
