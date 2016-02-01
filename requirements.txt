@@ -1,1 +1,4 @@
+numpy==1.10.4
 peewee==2.8.0
+scikit-learn==0.17
+scipy==0.17.0

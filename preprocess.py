@@ -1,6 +1,7 @@
 from collections import namedtuple
 
 from models import *
+import utils
 
 # read from database and put together data for training
 apts = Sold\
@@ -12,13 +13,11 @@ apts = Sold\
             (Sold.rooms != None) &
             (Sold.floor != None) &
             (Sold.rent != None) &
+            (Sold.livingArea > 0) &
+            (Sold.rooms > 0) &
+            (Sold.floor > 0) &
+            (Sold.rent > 0) &
             (Sold.soldDate > "2015-07-01"))
 
 # store data as csv
-datapoints = [(a.soldPrice, a.livingArea, a.rooms, a.floor, a.rent,
-    a.soldareas_set[0].area.priceIndex) for a in apts]
-with open("data.csv", "w") as csvFile:
-    csvFile.write("soldPrice,livingArea,rooms,floor,rent,priceIndex\n")
-    for d in datapoints:
-        print d
-        csvFile.write(",".join(str(v) for v in d) + "\n")
+utils.writeCsv(apts)
