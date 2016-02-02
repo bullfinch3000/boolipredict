@@ -2,6 +2,5 @@
 * Endast Stockholms län
 * 6 månaders bakåt i tiden
 
-
 Nedlagd tid hittills:
-270 min
+300 min
