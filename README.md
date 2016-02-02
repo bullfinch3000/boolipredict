@@ -11,7 +11,12 @@ Repot innehåll Python-script som:
 * tränar en slutlig modell och spar resultatet (train.py)
 * tillgängliggör modellen via ett kommandoprompt-verktyg (predict.py)
 
-För att använda, ladda ned repot och kör följande kommando från en terminal:
+För att använda, gör så här:
+
+* ladda ned repot
+* sätt upp en virtualenv
+* installera requirements.txt med pip
+* kör nedanstående kommando från en terminal:
 
 python predict.py livingArea rooms floor rent areaName
 t.ex.: python predict.py 48 2 2 2800 Abrahamsberg
